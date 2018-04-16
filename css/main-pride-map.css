@@ -1,0 +1,858 @@
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('//uconn.edu/shared/fonts/proximanova_black_macroman/ProximaNova-Black-webfont.eot') format('eot'),
+    url('//uconn.edu/shared/fonts/proximanova_black_macroman/ProximaNova-Black-webfont.woff') format('woff'),
+    url('//uconn.edu/shared/fonts/proximanova_black_macroman/proximanova-black-webfont.woff2') format('ttf');
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('//uconn.edu/shared/fonts/proximanova_bold_macroman/ProximaNova-Bold-webfont.eot') format('eot'),
+    url('//uconn.edu/shared/fonts/proximanova_bold_macroman/ProximaNova-Bold-webfont.woff') format('woff'),
+    url('//uconn.edu/shared/fonts/proximanova_bold_macroman/proximanova-bold-webfont.woff2') format('ttf');
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('//uconn.edu/shared/fonts/proximanova_regular_macroman/proximanova-regular-webfont.eot') format('eot'),
+    url('//uconn.edu/shared/fonts/proximanova_regular_macroman/proximanova-regular-webfont.woff') format('woff'),
+    url('//uconn.edu/shared/fonts/proximanova_regular_macroman/proximanova-regular-webfont.woff2') format('ttf');
+	font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;}
+
+/*Global styles*/
+
+body{
+	color:#000000;
+	font-family: 'Proxima Nova', sans-serif;
+	font-weight: 500;
+}
+
+h1 {
+	font-family: 'Proxima Nova', sans-serif;
+	font-weight: 900;
+	line-height: 1em;
+	font-size: 45px;
+	font-size: 10vw;
+}
+
+h2 {
+	font-family: 'Proxima Nova', sans-serif;
+	font-weight: 700;
+	font-size: 35px;
+	font-size: 6vw;
+}
+
+.container-fluid{
+
+}
+
+#mainImg {
+	width: 100%;
+	background-image: url(../img/horsebarnsunset161113a158-webcrop.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+#mainImg img, .expectations img {
+	display: block;
+	width:50%;
+	margin-top: 15px;
+	margin-bottom:20px;
+}
+
+#mapImg{
+	width: 100%;
+	background-image: url(../img/ct-map-grey.png);
+	background-position: center;
+	height: 700px;
+	background-repeat: no-repeat;
+}
+
+nav{
+	width:80%;
+	margin-top: 50px;
+}
+
+nav ul li a{
+	width: 100%;
+	margin-top: 3px;
+}
+
+
+.expectations {
+	width: 100%;
+}
+
+.expectations img {
+	margin:0 auto;
+	width:50%;
+}
+
+.social img {
+	width: 36px;
+	height: 36px;
+}
+
+.facts, .campuses {
+	padding: 0 20px;
+}
+
+.facts ul {
+	list-style-type: none;
+	padding-left: 0px;
+}
+
+.grey-bg {
+	background-color: #ebebeb;
+  padding-top:50px !important;
+  padding-bottom:50px !important;
+}
+
+.padding-top-bottom-50 {
+    padding-top:50px !important;
+  padding-bottom:50px !important;
+}
+
+#accordion {
+	margin-top: 25px;
+	width: 100%;
+}
+
+.white {
+	color:#fff;
+}
+
+.uconn-blue{
+	color:#000e2f;
+}
+
+.callout {
+	font-size: 28px;
+	line-height: 1.2em;
+}
+
+.white-title-bg {
+	background-color: #fff;
+	padding: 10px 15px;
+}
+
+.title-rule {
+	border-bottom: solid 4px #000000;
+	padding-bottom:25px;
+}
+
+.display-block{
+	display: block;
+}
+
+.margin-bottom-20 {
+	margin-bottom: 20px;
+}
+
+.margin-top-25{
+	margin-top:25px;
+}
+
+.margin-top-50{
+	margin-top:50px;
+}
+
+.padding-top-50 {
+	padding-top: 50px;
+}
+
+.padding-bottom-50 {
+	padding-bottom: 50px;
+}
+
+.margin-bottom-50 {
+	margin-bottom: 50px;
+}
+
+.margin-bottom-30 {
+	margin-bottom: 30px;
+}
+
+.list-line-height {
+	line-height: 1.5em;
+	margin-top:15px;
+}
+
+.btn {
+	border-radius: 0px;
+	padding:10px 25px;
+}
+
+.btn-danger {
+	background-color: #d33a2c;
+	border: 3px solid #d33a2c;
+  color:#ffffff !important;
+}
+
+.btn-danger:hover {
+	background-color: #ffffff;
+	color:#000 !important;
+}
+
+.btn-primary {
+	background-color: #efefef;
+	border: 1px solid #000e2f;
+	color:#000e2f;
+}
+
+.btn-primary:hover{
+	background-color: #000e2f;
+	border: 1px solid #000e2f;
+	color:#fff;
+}
+
+.uconn-blue-bg {
+	background-color: #000e2f;
+}
+
+.red {
+	color:#d33a2c;
+}
+
+.font-22{
+	font-size: 22px;
+}
+
+.card-header {
+	background-color: #d33a2c;
+	border-bottom-color: #d33a2c;
+	padding:10px;
+} 
+
+.card {
+	border-color: #d33a2c;
+	margin-bottom: 10px;
+	border-radius: 0px;
+}
+
+.card-header:first-child {
+	border-radius: 0px;
+}
+
+.btn-link {
+	color:#fff;
+	font-weight: 700;
+	font-size: 18px;
+	width: 100%;
+	text-align: left;
+}
+
+.btn-link:hover{
+	color:#000e2f;
+	text-decoration: none;
+}
+
+.btn-link:active {
+	text-decoration: none;
+}
+
+.btn-padding{
+	padding: 10px;
+}
+
+footer{
+	margin:30px 0px;
+}
+
+footer a {
+	color:#ddd;
+	font-size: 14px;
+	display: line-block;
+	margin:10px;
+}
+
+footer a:hover{
+	color:#ddd;
+	text-decoration: none;
+	border-bottom: 2px solid #ddd;
+}
+
+
+
+
+
+/*Mobile*/
+@media (max-width: 576px) { 
+
+body{
+	font-size: 20px;
+	/*font-size: 4vw;*/
+}
+
+h1 {
+	font-size: 45px;
+	font-size: 10vw;
+}
+
+h2 {
+	font-size: 35px;
+	font-size: 6vw;
+}
+
+footer a {
+	display: block;
+}
+
+#desktop-only, #desktop-small{
+  display: none;
+}
+
+
+
+ }
+
+
+
+@media (min-width: 576px) {
+
+body{
+	font-size: 20px;
+	/*font-size: 3vw;*/
+}
+
+h1 {
+	font-size: 60px;
+	font-size: 10vw;
+}
+
+h2 {
+	font-size: 35px;
+	font-size: 6vw;
+}
+footer a {
+	display: block;
+}
+#desktop-only, #desktop-small{
+  display: none;
+}
+
+
+ }
+
+
+
+
+/*Desktop*/
+
+@media (min-width: 768px) { 
+body{
+	font-size: 18px;
+	/*font-size: 2vw;*/
+}
+
+
+/*#facts, .campuses {
+	padding: 0 50px;
+}*/
+
+h1 {
+	font-size: 36px;
+	font-size: 4.7vw;
+}
+
+h2 {
+	font-size: 25px;
+	font-size: 3vw;
+}
+
+footer a {
+	display: inline-block;
+}
+
+.expectations img {
+	margin:0 auto;
+	width:85%;
+	max-width: 450px;
+}
+
+
+/*POPOVER MAP FOR CAMPUSES*/
+
+
+button{
+  border-color: transparent;
+  border-style: none;
+}
+
+
+.hotspot-container {
+  margin-top: 50px;
+  width: 700px; 
+  height: 500px;
+  position: relative;
+  background: url(../img/ct-map-grey-sm2.png) no-repeat;
+}
+
+
+
+  .hotspot-container #health.hotspot {
+    background-color:#79cdd0;
+    border-radius:50%;
+    width: 15px; height: 15px;
+    position: absolute;
+    top: 80px; /* Top coord of hotspot (relative to parent, bottom: 20px is also valid) */
+    left: 240px; /* Left coord of hotspot (right: 20px is also valid); */
+  }
+
+  .hotspot-container #health.hotspot:hover {
+    background-color:#d33a2c;
+    border-radius:50%;
+    width: 15px; height: 15px;
+    position: absolute;
+    top: 80px; /* Top coord of hotspot (relative to parent, bottom: 20px is also valid) */
+    left: 240px; /* Left coord of hotspot (right: 20px is also valid); */
+  }
+
+.hotspot-title-health {
+   position: absolute;
+    top: 50px; /* Top coord of hotspot (relative to parent, bottom: 20px is also valid) */
+    left: 190px; /* Left coord of hotspot (right: 20px is also valid); */
+}
+
+  .hotspot-container #law.hotspot {
+    background-color:#79cdd0;
+    border-radius:50%;
+    width: 15px; height: 15px;
+    position: absolute;
+    top: 100px; /* Top coord of hotspot (relative to parent, bottom: 20px is also valid) */
+    left: 270px; /* Left coord of hotspot (right: 20px is also valid); */
+  }
+
+  .hotspot-container #law.hotspot:hover {
+    background-color:#d33a2c;
+    border-radius:50%;
+    width: 15px; height: 15px;
+    position: absolute;
+    top: 100px; /* Top coord of hotspot (relative to parent, bottom: 20px is also valid) */
+    left: 270px; /* Left coord of hotspot (right: 20px is also valid); */
+  }
+
+.hotspot-title-law {
+   position: absolute;
+    top: 75px; /* Top coord of hotspot (relative to parent, bottom: 20px is also valid) */
+    left: 265px; /* Left coord of hotspot (right: 20px is also valid); */
+}
+
+
+  .hotspot-container #hartford.hotspot {
+    background-color:#79cdd0;
+    border-radius:50%;
+    width: 15px; height: 15px;
+    position: absolute;
+    top: 110px; /* Top coord of hotspot (relative to parent, bottom: 20px is also valid) */
+    left: 300px; /* Left coord of hotspot (right: 20px is also valid); */
+  }
+
+  .hotspot-container #hartford.hotspot:hover {
+    background-color:#d33a2c;
+    border-radius:50%;
+    width: 15px; height: 15px;
+    position: absolute;
+    top: 110px; /* Top coord of hotspot (relative to parent, bottom: 20px is also valid) */
+    left: 300px; /* Left coord of hotspot (right: 20px is also valid); */
+  }
+
+.hotspot-title-hartford {
+   position: absolute;
+    top: 125px; /* Top coord of hotspot (relative to parent, bottom: 20px is also valid) */
+    left:280px; /* Left coord of hotspot (right: 20px is also valid); */
+}
+
+
+  .hotspot-container #storrs.hotspot {
+    background-color:#79cdd0;
+    border-radius:50%;
+    width: 15px; height: 15px;
+    position: absolute;
+    top: 70px; /* Top coord of hotspot (relative to parent, bottom: 20px is also valid) */
+    left: 380px; /* Left coord of hotspot (right: 20px is also valid); */
+  }
+
+  .hotspot-container #storrs.hotspot:hover {
+    background-color:#d33a2c;
+    border-radius:50%;
+    width: 15px; height: 15px;
+    position: absolute;
+    top: 70px; /* Top coord of hotspot (relative to parent, bottom: 20px is also valid) */
+    left: 380px; /* Left coord of hotspot (right: 20px is also valid); */
+  }
+
+.hotspot-title-storrs {
+   position: absolute;
+    top: 45px; /* Top coord of hotspot (relative to parent, bottom: 20px is also valid) */
+    left:365px; /* Left coord of hotspot (right: 20px is also valid); */
+}
+
+
+  .hotspot-container #avpt.hotspot {
+    background-color:#79cdd0;
+    border-radius:50%;
+    width: 15px; height: 15px;
+    position: absolute;
+    top: 222px; /* Top coord of hotspot (relative to parent, bottom: 20px is also valid) */
+    left: 400px; /* Left coord of hotspot (right: 20px is also valid); */
+  }
+
+  .hotspot-container #avpt.hotspot:hover {
+    background-color:#d33a2c;
+    border-radius:50%;
+    width: 15px; height: 15px;
+    position: absolute;
+    top: 222px; /* Top coord of hotspot (relative to parent, bottom: 20px is also valid) */
+    left: 400px; /* Left coord of hotspot (right: 20px is also valid); */
+  }
+
+.hotspot-title-avpt {
+   position: absolute;
+    top: 195px; /* Top coord of hotspot (relative to parent, bottom: 20px is also valid) */
+    left:370px; /* Left coord of hotspot (right: 20px is also valid); */
+}
+
+
+  .hotspot-container #wtby.hotspot {
+    background-color:#79cdd0;
+    border-radius:50%;
+    width: 15px; height: 15px;
+    position: absolute;
+    top: 140px; /* Top coord of hotspot (relative to parent, bottom: 20px is also valid) */
+    left: 190px; /* Left coord of hotspot (right: 20px is also valid); */
+  }
+
+  .hotspot-container #wtby.hotspot:hover {
+    background-color:#d33a2c;
+    border-radius:50%;
+    width: 15px; height: 15px;
+    position: absolute;
+    top: 140px; /* Top coord of hotspot (relative to parent, bottom: 20px is also valid) */
+    left: 190px; /* Left coord of hotspot (right: 20px is also valid); */
+  }
+
+.hotspot-title-wtby {
+   position: absolute;
+    top: 115px; /* Top coord of hotspot (relative to parent, bottom: 20px is also valid) */
+    left:160px; /* Left coord of hotspot (right: 20px is also valid); */
+}
+
+
+  .hotspot-container #stamford.hotspot {
+    background-color:#79cdd0;
+    border-radius:50%;
+    width: 15px; height: 15px;
+    position: absolute;
+    top: 300px; /* Top coord of hotspot (relative to parent, bottom: 20px is also valid) */
+    left:80px; /* Left coord of hotspot (right: 20px is also valid); */
+  }
+
+  .hotspot-container #stamford.hotspot:hover {
+    background-color:#d33a2c;
+    border-radius:50%;
+    width: 15px; height: 15px;
+    position: absolute;
+    top: 300px; /* Top coord of hotspot (relative to parent, bottom: 20px is also valid) */
+    left: 80px; /* Left coord of hotspot (right: 20px is also valid); */
+  }
+
+.hotspot-title-stamford {
+   position: absolute;
+    top: 275px; /* Top coord of hotspot (relative to parent, bottom: 20px is also valid) */
+    left:70px; /* Left coord of hotspot (right: 20px is also valid); */
+}
+
+#desktop-small p {
+  font-size: 16px;
+}
+
+
+#mobile-only, #desktop-only{
+  display:none;
+}
+
+
+
+#desktop-small{
+  display: block;
+}
+
+
+
+
+
+
+}
+
+
+@media (min-width: 992px) { 
+
+body{
+	font-size: 18px;
+	/*font-size: 1.8vw;*/
+}
+
+
+h1 {
+	font-size: 51px;
+	font-size: 4.7vw;
+}
+
+h2 {
+	font-size: 35px;
+	font-size: 3vw;
+}
+
+.expectations img {
+	margin:0 auto;
+	width:75%;
+	max-width: 450px;
+}
+
+
+
+ }
+
+
+ @media (min-width: 1200px) { 
+
+body{
+	font-size: 20px;
+	/*font-size: 1.4vw;*/
+}
+
+
+/*POPOVER MAP FOR CAMPUSES*/
+
+
+button{
+  border-color: transparent;
+  border-style: none;
+}
+
+
+.hotspot-container {
+  width: 887px; 
+  height: 655px;
+  position: relative;
+  background: url(../img/ct-map-grey.png) no-repeat;
+}
+
+
+
+  .hotspot-container #health2.hotspot {
+    background-color:#79cdd0;
+    border-radius:50%;
+    width: 15px; height: 15px;
+    position: absolute;
+    top: 145px; /* Top coord of hotspot (relative to parent, bottom: 20px is also valid) */
+    left: 450px; /* Left coord of hotspot (right: 20px is also valid); */
+  }
+
+  .hotspot-container #health2.hotspot:hover {
+    background-color:#d33a2c;
+    border-radius:50%;
+    width: 15px; height: 15px;
+    position: absolute;
+    top: 145px; /* Top coord of hotspot (relative to parent, bottom: 20px is also valid) */
+    left: 450px; /* Left coord of hotspot (right: 20px is also valid); */
+  }
+
+.hotspot-title-health {
+   position: absolute;
+    top: 110px; /* Top coord of hotspot (relative to parent, bottom: 20px is also valid) */
+    left: 420px; /* Left coord of hotspot (right: 20px is also valid); */
+}
+
+  .hotspot-container #law2.hotspot {
+    background-color:#79cdd0;
+    border-radius:50%;
+    width: 15px; height: 15px;
+    position: absolute;
+    top: 165px; /* Top coord of hotspot (relative to parent, bottom: 20px is also valid) */
+    left: 500px; /* Left coord of hotspot (right: 20px is also valid); */
+  }
+
+  .hotspot-container #law2.hotspot:hover {
+    background-color:#d33a2c;
+    border-radius:50%;
+    width: 15px; height: 15px;
+    position: absolute;
+    top: 165px; /* Top coord of hotspot (relative to parent, bottom: 20px is also valid) */
+    left: 500px; /* Left coord of hotspot (right: 20px is also valid); */
+  }
+
+.hotspot-title-law {
+   position: absolute;
+    top: 130px; /* Top coord of hotspot (relative to parent, bottom: 20px is also valid) */
+    left: 480px; /* Left coord of hotspot (right: 20px is also valid); */
+}
+
+
+  .hotspot-container #hartford2.hotspot {
+    background-color:#79cdd0;
+    border-radius:50%;
+    width: 15px; height: 15px;
+    position: absolute;
+    top: 185px; /* Top coord of hotspot (relative to parent, bottom: 20px is also valid) */
+    left: 520px; /* Left coord of hotspot (right: 20px is also valid); */
+  }
+
+  .hotspot-container #hartford2.hotspot:hover {
+    background-color:#d33a2c;
+    border-radius:50%;
+    width: 15px; height: 15px;
+    position: absolute;
+    top: 185px; /* Top coord of hotspot (relative to parent, bottom: 20px is also valid) */
+    left: 520px; /* Left coord of hotspot (right: 20px is also valid); */
+  }
+
+.hotspot-title-hartford {
+   position: absolute;
+    top: 210px; /* Top coord of hotspot (relative to parent, bottom: 20px is also valid) */
+    left:500px; /* Left coord of hotspot (right: 20px is also valid); */
+}
+
+
+  .hotspot-container #storrs2.hotspot {
+    background-color:#79cdd0;
+    border-radius:50%;
+    width: 15px; height: 15px;
+    position: absolute;
+    top: 125px; /* Top coord of hotspot (relative to parent, bottom: 20px is also valid) */
+    left: 700px; /* Left coord of hotspot (right: 20px is also valid); */
+  }
+
+  .hotspot-container #storrs2.hotspot:hover {
+    background-color:#d33a2c;
+    border-radius:50%;
+    width: 15px; height: 15px;
+    position: absolute;
+    top: 125px; /* Top coord of hotspot (relative to parent, bottom: 20px is also valid) */
+    left: 700px; /* Left coord of hotspot (right: 20px is also valid); */
+  }
+
+.hotspot-title-storrs {
+   position: absolute;
+    top: 90px; /* Top coord of hotspot (relative to parent, bottom: 20px is also valid) */
+    left:690px; /* Left coord of hotspot (right: 20px is also valid); */
+}
+
+
+  .hotspot-container #avpt2.hotspot {
+    background-color:#79cdd0;
+    border-radius:50%;
+    width: 15px; height: 15px;
+    position: absolute;
+    top: 420px; /* Top coord of hotspot (relative to parent, bottom: 20px is also valid) */
+    left: 750px; /* Left coord of hotspot (right: 20px is also valid); */
+  }
+
+  .hotspot-container #avpt2.hotspot:hover {
+    background-color:#d33a2c;
+    border-radius:50%;
+    width: 15px; height: 15px;
+    position: absolute;
+    top: 420px; /* Top coord of hotspot (relative to parent, bottom: 20px is also valid) */
+    left: 750px; /* Left coord of hotspot (right: 20px is also valid); */
+  }
+
+.hotspot-title-avpt {
+   position: absolute;
+    top: 390px; /* Top coord of hotspot (relative to parent, bottom: 20px is also valid) */
+    left:720px; /* Left coord of hotspot (right: 20px is also valid); */
+}
+
+
+  .hotspot-container #wtby2.hotspot {
+    background-color:#79cdd0;
+    border-radius:50%;
+    width: 15px; height: 15px;
+    position: absolute;
+    top: 270px; /* Top coord of hotspot (relative to parent, bottom: 20px is also valid) */
+    left: 380px; /* Left coord of hotspot (right: 20px is also valid); */
+  }
+
+  .hotspot-container #wtby2.hotspot:hover {
+    background-color:#d33a2c;
+    border-radius:50%;
+    width: 15px; height: 15px;
+    position: absolute;
+    top: 270px; /* Top coord of hotspot (relative to parent, bottom: 20px is also valid) */
+    left: 380px; /* Left coord of hotspot (right: 20px is also valid); */
+  }
+
+.hotspot-title-wtby {
+   position: absolute;
+    top: 240px; /* Top coord of hotspot (relative to parent, bottom: 20px is also valid) */
+    left:350px; /* Left coord of hotspot (right: 20px is also valid); */
+}
+
+
+  .hotspot-container #stamford2.hotspot {
+    background-color:#79cdd0;
+    border-radius:50%;
+    width: 15px; height: 15px;
+    position: absolute;
+    top: 580px; /* Top coord of hotspot (relative to parent, bottom: 20px is also valid) */
+    left: 110px; /* Left coord of hotspot (right: 20px is also valid); */
+  }
+
+  .hotspot-container #stamford2.hotspot:hover {
+    background-color:#d33a2c;
+    border-radius:50%;
+    width: 15px; height: 15px;
+    position: absolute;
+    top: 580px; /* Top coord of hotspot (relative to parent, bottom: 20px is also valid) */
+    left: 110px; /* Left coord of hotspot (right: 20px is also valid); */
+  }
+
+.hotspot-title-stamford {
+   position: absolute;
+    top: 550px; /* Top coord of hotspot (relative to parent, bottom: 20px is also valid) */
+    left:90px; /* Left coord of hotspot (right: 20px is also valid); */
+}
+
+
+#mobile-only, #desktop-small{
+  display:none;
+}
+
+#desktop-only{
+  display: block;
+}
+
+
+
+
+  }
+
+  @media (min-width: 1750px) { 
+h1 {
+	font-size: 75px;
+	font-size: 4.7vw;
+}
+
+h2 {
+	font-size: 55px;
+	font-size: 3vw;
+}
+.row{
+  padding:0 0 0 150px;
+}
+
+#desktop-only h1 {
+  padding-left:150px;
+  padding-bottom:50px;
+}
+
+  }

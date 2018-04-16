@@ -1,0 +1,5 @@
+*.eps
+*.psd
+*.svg
+.DS_Store
+node_modules
