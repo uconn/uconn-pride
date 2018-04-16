@@ -1,6 +1,9 @@
 # UConn Pride
 This repo is for the UConn Pride site. Using it is fairly straightforward.
 
+**IMPORTANT**
+This repo is set up so that pushes to `master` will go into production via github pages. Please develop on a different branch and merge after approval.
+
 ## Usage
 ```
 $ git clone {repo}
