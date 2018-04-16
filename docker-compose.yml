@@ -1,0 +1,25 @@
+version: "3"
+services:
+  web:
+    image: uconn/comm0-ssl:latest
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./:/var/www/html
+      - dist:/var/www/html/dist
+    restart: always
+  local:
+    image: uconn/local:latest
+    ports:
+      - "3000:3000"
+      - "3001:3001"
+    restart: always
+    volumes:
+      - ./package.json:/project/package.json
+      - ./gulpfile.js:/project/gulpfile.js
+      - ./css:/project/css
+      - ./js:/project/js
+      - dist:/project/dist
+volumes:
+  dist:
