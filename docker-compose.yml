@@ -7,7 +7,7 @@ services:
       - "443:443"
     volumes:
       - ./:/var/www/html
-      - dist:/var/www/html/dist
+      - ./dist:/var/www/html/dist
     restart: always
   local:
     image: uconn/local:latest
@@ -16,10 +16,5 @@ services:
       - "3001:3001"
     restart: always
     volumes:
-      - ./package.json:/project/package.json
-      - ./gulpfile.js:/project/gulpfile.js
-      - ./css:/project/css
-      - ./js:/project/js
-      - dist:/project/dist
-volumes:
-  dist:
+      - ./.entrypoint/local-entrypoint.sh:/entrypoint.sh
+      - ./:/project
