@@ -50,8 +50,9 @@ h2 {
 	font-size: 6vw;
 }
 
-.container-fluid{
-
+.banner-row {
+  display: flex;
+  flex-direction: row;
 }
 
 #mainImg {
@@ -280,9 +281,16 @@ footer a:hover{
 	border-bottom: 2px solid #ddd;
 }
 
+#home-link-container {
+  flex: 1;
+  padding-left: 24px;
+}
 
-
-
+#button-container {
+  height: 36px;
+  margin: auto 0;
+  padding-right: 24px;
+}
 
 /*Mobile*/
 @media (max-width: 576px) { 
@@ -823,6 +831,7 @@ button{
 }
 
 
+
 #mobile-only, #desktop-small{
   display:none;
 }
@@ -836,23 +845,24 @@ button{
 
   }
 
-  @media (min-width: 1750px) { 
-h1 {
-	font-size: 75px;
-	font-size: 4.7vw;
-}
-
-h2 {
-	font-size: 55px;
-	font-size: 3vw;
-}
-.row{
-  padding:0 0 0 150px;
-}
-
-#desktop-only h1 {
-  padding-left:150px;
-  padding-bottom:50px;
-}
-
+@media (min-width: 1750px) { 
+  h1 {
+    font-size: 75px;
+    font-size: 4.7vw;
   }
+
+  h2 {
+    font-size: 55px;
+    font-size: 3vw;
+  }
+  .row{
+    padding:0 0 0 150px;
+  }
+  .banner-row {
+    padding: 0 150px;
+  }
+  #desktop-only h1 {
+    padding-left:150px;
+    padding-bottom:50px;
+  }
+}
