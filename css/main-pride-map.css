@@ -69,7 +69,7 @@ h2 {
 	margin-bottom:20px;
 }
 
-#mapImg{
+#mapImg {
 	width: 100%;
 	background-image: url(../img/ct-map-grey.png);
 	background-position: center;
@@ -77,12 +77,12 @@ h2 {
 	background-repeat: no-repeat;
 }
 
-nav{
+nav {
 	width:80%;
 	margin-top: 50px;
 }
 
-nav ul li a{
+nav ul li a {
 	width: 100%;
 	margin-top: 3px;
 }
@@ -102,7 +102,8 @@ nav ul li a{
 	height: 36px;
 }
 
-.facts, .campuses {
+.facts, 
+.campuses {
 	padding: 0 20px;
 }
 
@@ -118,7 +119,7 @@ nav ul li a{
 }
 
 .padding-top-bottom-50 {
-    padding-top:50px !important;
+  padding-top:50px !important;
   padding-bottom:50px !important;
 }
 
